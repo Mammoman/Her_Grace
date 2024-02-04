@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      margin: 50px;
+      overflow: hidden;
+    }
+    h1 {
+      color: #333;
+    }
+    .credits-container {
+      position: relative;
+      animation: rollCredits 2s linear infinite;
+    }
+    p {
+      color: #555;
+      margin: 10px 0;
+    }
+    @keyframes rollCredits {
+      from {
+        top: 100%;
+      }
+      to {
+        top: -100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Credits</h1>
+  <div class="credits-container">
+    <p>Credit: Me</p>
+    <p>Design: Me</p>
+    <p>Memes: Courtesy of Noona😂</p>
+    <p>Inspiration: My Dearest Grace ❤️</p>
+    <p>Ahem more credit to me😭</p>
+  </div>
+  
+  <script>
+    // Close the page after 5 seconds
+    setTimeout(function () {
+      window.close();
+    }, 5000);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/AIV/Images/IMG8.jpg');
+}
+
+.container {
+  text-align: center;
+}
+
+.kitten-img {
+  width: 250px;
+  border-radius: 10px;
+  margin: 20px;
+  
+}
+
+h1 {
+  font-size: 3em;
+  background: linear-gradient(90deg, transparent, white);
+  background-clip: text;
+  color: transparent;
+  animation: textAnimation 5s linear infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    color: red;
+    background-position: 0% 0%;
+  }
+  100% {
+    color: black;
+    background-position: 100% 0%;
+  }
+}
+
+.options {
+  margin: 20px;
+}
+
+.love-text {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  transition: all 1s;
+}
+
+.love-text.white-bg {
+  background-color: white;
+  color: red;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+@keyframes flyAround {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(20px); }
+  50% { transform: translate(60px, 0); }
+  75% { transform: translate(20px, 20px); }
+  100% { transform: translate(0, 0); }
+}

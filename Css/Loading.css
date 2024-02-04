@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/AIV/Images/IMG2.jpg');
+    background-repeat: repeat;
+    background-position: left;
+  overflow: hidden;
+  background-size: cover;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+.loading-container {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+.loading-video {
+  width: 500px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  display: block;
+  font-size: 25px;
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  animation: shine 2s linear infinite;
+}
+
+.page-transition {
+  animation: flipPage 2s ease-in-out; /* Adjust the animation duration as needed */
+  transform-origin: right center;
+  transform: rotateY(-180deg);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% center;
+  }
+}
+
+@keyframes flipPage {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-300deg);
+  }
+}
