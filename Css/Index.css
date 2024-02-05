@@ -55,7 +55,7 @@ button:hover {
 .page-hidden {
     opacity: 0;
     pointer-events: none;
-    transform: translateY(20px); /* Adjust the translateY value based on your preference */
+    transform: translateY(20px);
 }
 
 
