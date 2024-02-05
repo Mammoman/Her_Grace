@@ -54,5 +54,5 @@ function showVideo() {
 
 
 function redirectToNextPage() {
-    window.location.href = '/Main.html';
+    window.location.href = 'Main.html';
 }
