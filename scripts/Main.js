@@ -18,20 +18,20 @@ function handleYes() {
 
         // Display repeating images after one second
         setTimeout(function () {
-          const numImages = 170; // Number of repeating images
-          const imagePath = '/AIV/Images/IMG9.jpg'; // Replace with the actual path to your image
+          const numImages = 170; 
+          const imagePath = 'AIV/Images/IMG9.jpg'; 
 
           for (let i = 0; i < numImages; i++) {
             const imageElement = document.createElement('img');
             imageElement.src = imagePath;
-            imageElement.style.width = '120px'; // Adjust the width as needed
-            imageElement.style.height = '120px'; // Adjust the height as needed
+            imageElement.style.width = '120px'; 
+            imageElement.style.height = '120px'; 
             imageElement.style.position = 'fixed';
             imageElement.style.top = `${Math.random() * window.innerHeight}px`;
             imageElement.style.left = `${Math.random() * window.innerWidth}px`;
-            imageElement.style.zIndex = '9999'; // Adjust the z-index to make it appear above other elements
-            imageElement.style.transition = 'opacity 0.5s ease-in-out'; // Smooth opacity transition
-            imageElement.style.opacity = '0'; // Start with opacity 0
+            imageElement.style.zIndex = '9999';
+            imageElement.style.transition = 'opacity 0.5s ease-in-out'; 
+            imageElement.style.opacity = '0';
 
             // Append the image element to the body
             document.body.appendChild(imageElement);
@@ -44,11 +44,11 @@ function handleYes() {
           }
         }, 1000);
         
-        const audio = new Audio('/AIV/Audio /george-micael-wham-careless-whisper-1.mp3'); // Replace with the actual path to your sound file
+        const audio = new Audio('AIV/Audio /george-micael-wham-careless-whisper-1.mp3'); 
   audio.play();
   
         setTimeout(function () {
-          window.location.href = '/Credits Page.html'; // Replace with the actual path to your credits page
+          window.location.href = 'Credits Page.html';
         }, 9000);
         
 
@@ -93,7 +93,7 @@ function handleNo() {
       // Add a new button named 'Eii God😭'
       const newButton = document.createElement('button');
       newButton.innerText = 'Eii God😭';
-      newButton.onclick = handleEiiGodOption; // Define a new function for this button
+      newButton.onclick = handleEiiGodOption; 
       optionsDiv.appendChild(newButton);
 
       // Display a whole new result for the added button
@@ -109,7 +109,7 @@ function handleNo() {
   noButton.style.left = `${newPositionX}px`;
   noButton.style.top = `${newPositionY}px`;
 
-  // Add more logic or actions for the 'No' button as needed
+ 
 }
 
 // New function for the added 'Eii God😭' button
@@ -127,20 +127,20 @@ function handleEiiGodOption() {
 
       // Display repeating images with a smooth animation
       setTimeout(function () {
-        const numImages = 170; // Number of repeating images
-        const imagePath = '/AIV/Images/IMG10.jpg'; // Replace with the actual path to your image
+        const numImages = 170; // 
+        const imagePath = 'AIV/Images/IMG10.jpg'; 
 
         for (let i = 0; i < numImages; i++) {
           const imageElement = document.createElement('img');
           imageElement.src = imagePath;
-          imageElement.style.width = '100px'; // Adjust the width as needed
-          imageElement.style.height = '100px'; // Adjust the height as needed
+          imageElement.style.width = '100px';
+          imageElement.style.height = '100px'; 
           imageElement.style.position = 'fixed';
           imageElement.style.top = `${Math.random() * window.innerHeight}px`;
           imageElement.style.left = `${Math.random() * window.innerWidth}px`;
-          imageElement.style.zIndex = '9999'; // Adjust the z-index to make it appear above other elements
-          imageElement.style.transition = 'opacity 0.2s ease-in-out'; // Smooth opacity transition
-          imageElement.style.opacity = '0'; // Start with opacity 0
+          imageElement.style.zIndex = '9999';
+          imageElement.style.transition = 'opacity 0.2s ease-in-out'; 
+          imageElement.style.opacity = '0'; 
 
           // Append the image element to the body
           document.body.appendChild(imageElement);
@@ -152,14 +152,13 @@ function handleEiiGodOption() {
           imageElement.style.opacity = '1';
         }
       }, 1000);
-      const audio = new Audio('/AIV/Audio /awkward-cricket-sound-effect.mp3'); // Replace with the actual path to your sound file
+      const audio = new Audio('AIV/Audio/awkward-cricket-sound-effect.mp3');
   audio.play();
 
     }, 1000);
 
   }, 1000);
 
-  // Add more logic or actions for the 'Eii God😭' button as needed
-}
+ 
 
 
