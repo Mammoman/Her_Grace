@@ -23,7 +23,7 @@ function validateLogin(event) {
 
         // Redirect to the Valentine's proposal page after a delay (adjust as needed)
         setTimeout(() => {
-            window.location.href = '/Loading.html';
+            window.location.href = 'Loading.html';
         }, 500); // This value should match the transition duration in CSS
     } else {
         loginMessage.textContent = 'Uhh Try harder.';
