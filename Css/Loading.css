@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-image: url('/AIV/Images/IMG2.jpg');
+  background-image: url('AIV/Images/IMG2.jpg');
     background-repeat: repeat;
     background-position: left;
   overflow: hidden;
@@ -22,7 +22,7 @@ body {
 }
 
 .loading-video {
-  width: 500px; /* Adjust size as needed */
+  width: 700px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .page-transition {
-  animation: flipPage 2s ease-in-out; /* Adjust the animation duration as needed */
+  animation: flipPage 2s ease-in-out; 
   transform-origin: right center;
   transform: rotateY(-180deg);
 }
